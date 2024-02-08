@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-5.0.dtd">
+    
+<hibernate-mapping>
+    <class name="com.caching.xml.Employee" table="employee">
+        <id name="emp_id" type="int">
+            <column name="emp_id" />
+            <generator class="native" />
+        </id>
+        
+        <property name="name" column="name" type="text" />
+        <property name="departmentname" column="departmentname" type="text" />
+        <property name="employeecode" column="employeecode" type="text" />
+    </class>
+</hibernate-mapping>
